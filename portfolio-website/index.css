@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50px;
+  padding: 50px 20vw;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width:700px){
+    .about {
+        flex-direction: column-reverse;
+    }
+}
+
+.about>* {
+        flex: 1 1 160px;
+    }
+
+.aboutFirstBox {
+  position: relative;
+  padding: 10%;
+}
+
+.aboutSecondBox {
+  position: relative;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.wave .shape-fill {
+  fill: #00b7ff;
+}
