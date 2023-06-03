@@ -1,16 +1,22 @@
 :root {
-  --backgroundColor: #001220;
-  --waveColor: #9376E0;
+  --backgroundColor: #262b31;
+  --textColor: #ffffff;
+}
+
+html{
+  height: 100%;
+  font-family: "Roboto Mono";
 }
 
 body{
+  height: 100%;
   margin: 0;
   font-family: 'Prompt', sans-serif;
   color: rgb(0, 0, 0);
   background: var(--backgroundColor);
 }
 
-.container {
+.containerBox {
   display: flex;
   position: relative;
   justify-content: center;
@@ -20,7 +26,7 @@ body{
   display: flex;
   position: relative;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   max-width: 50rem;
 }
 
@@ -29,23 +35,94 @@ body{
 }
 
 .aboutFirstBox {
-  display: flex;
-  justify-content: space-evenly;
   padding-top: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.image {
+  display: contents;
+  justify-items: left;
+}
+
+.dot {
+  display: inline-block;
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  background-color: #262b31;
+  border-radius: 50%;
+  transform: translate(-40px, -120px);
+}
+
+.dot2 {
+  display: inline-block;
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  background-color: #262b31;
+}
+
+.githubIcon {
+  display: inline-block;
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.profilepicture{
+  border-radius: 25px;
+  max-height: 10rem;
+  max-width: 10rem;
 }
 
 .aboutSecondBox {
   flex-direction: column;
+  flex-wrap: wrap ;
   padding: 1%;
   padding-left: 10%;
   padding-right: 10%;
-  color: azure;
-  font-size: 150%;
-  text-align: center;
+  color: var(--textColor);
+  font-size: 125%;
+  text-align: left;
+}
+
+.aboutThirdBox {
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: var(--textColor);
+  font-size: 125%;
+  text-align: left;
+}
+
+.aboutFourthBox {
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: var(--textColor);
+  font-size: 125%;
+  text-align: left;
+}
+
+.aboutFifthBox {
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: var(--textColor);
+  font-size: 125%;
+  text-align: left;
 }
 
 .spacer {
-  aspect-ratio: 960/150;
+  aspect-ratio: 960/100;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -58,4 +135,55 @@ body{
 
 .flip {
   transform: rotate(180deg);
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--textColor);
+  margin: 1em 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--textColor);
+}
+
+.icons{
+  position: relative;
+  max-width: 15rem;
+}
+
+.centerProject{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.projectLink {
+  background-color: #262b31;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: #ffffff;
+}
+
+.projectLink:hover, .projectLink:active {
+  background-color: #424a53;
+}
+
+@media only screen and (max-width: 800px) {
+    .aboutSecondBox {
+    font-size: 100%;
+  }
+
+  .icons{
+    max-width: 10rem;
+  }
 }
