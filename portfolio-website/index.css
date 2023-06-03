@@ -1,63 +1,61 @@
+:root {
+  --backgroundColor: #001220;
+  --waveColor: #9376E0;
+}
+
 body{
   margin: 0;
   font-family: 'Prompt', sans-serif;
   color: rgb(0, 0, 0);
-  background: rgb(255, 255, 255);
+  background: var(--backgroundColor);
 }
 
-section{
-  position: relative;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 50px;
-  padding: 50px 20vw;
+  position: relative;
+  justify-content: center;
 }
 
 .about {
   display: flex;
-  flex-direction: row;
+  position: relative;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-}
-
-@media screen and (max-width:700px){
-    .about {
-        flex-direction: column-reverse;
-    }
+  max-width: 50rem;
 }
 
 .about>* {
-        flex: 1 1 160px;
-    }
+  flex: 1 1 160px;
+}
 
 .aboutFirstBox {
-  position: relative;
-  padding: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1%;
 }
 
 .aboutSecondBox {
-  position: relative;
-  margin-top: 5%;
-  margin-left: 10%;
+  flex-direction: column;
+  padding: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: azure;
+  font-size: 150%;
+  text-align: center;
 }
 
-.wave {
-  position: absolute;
-  top: 0;
-  left: 0;
+.spacer {
+  aspect-ratio: 960/150;
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
+.layer1 {
+  background-image: url('./layered-wave.svg');
 }
 
-.wave .shape-fill {
-  fill: #00b7ff;
+.flip {
+  transform: rotate(180deg);
 }
