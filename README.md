@@ -1,3 +1,3 @@
 # portfoli-website
 
-check it out https://vuk77.github.io/
+check it out <a href="https://vuk77.github.io/" target="_blank">https://vuk77.github.io/</a>
