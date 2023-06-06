@@ -14,6 +14,7 @@ body{
   font-family: 'Prompt', sans-serif;
   color: rgb(0, 0, 0);
   background: var(--backgroundColor);
+  font-size: 125%;
 }
 
 .containerBox {
@@ -84,7 +85,6 @@ body{
   padding-left: 10%;
   padding-right: 10%;
   color: var(--textColor);
-  font-size: 125%;
   text-align: left;
 }
 
@@ -95,7 +95,6 @@ body{
   padding-left: 10%;
   padding-right: 10%;
   color: var(--textColor);
-  font-size: 125%;
   text-align: left;
 }
 
@@ -106,7 +105,6 @@ body{
   padding-left: 10%;
   padding-right: 10%;
   color: var(--textColor);
-  font-size: 125%;
   text-align: left;
 }
 
@@ -117,7 +115,6 @@ body{
   padding-left: 10%;
   padding-right: 10%;
   color: var(--textColor);
-  font-size: 125%;
   text-align: left;
 }
 
@@ -179,7 +176,7 @@ h1 {
 }
 
 @media only screen and (max-width: 800px) {
-    .aboutSecondBox {
+    body {
     font-size: 100%;
   }
 
